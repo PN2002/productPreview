@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Libre+Franklin&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.container #first .image{
+    content: url(./product-preview-card-component-main/images/image-product-desktop.jpg);
+    width: 18em;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.container #second .content{
+    padding: 2em;
+}
+
+.container #second .content #object{
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    letter-spacing: 5px;
+    font-family: 'Libre Franklin', sans-serif;
+    padding-bottom: 2em;
+}
+
+.container #second .content #nameofPerfume{
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+}
+
+.container #second .content #description{
+    color: hsl(228, 12%, 48%);
+    margin-top: 1.6em;
+    font-family: 'Libre Franklin', sans-serif;
+    line-height: 1.5;
+}
+
+.container #second .content .price{
+    font-family: 'Fraunces', serif;
+    display: flex;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.container #second .content .price #newPrice{
+    color: hsl(158, 36%, 37%);
+    padding-right: 1em;
+}
+
+.container #second .content .price #oldPrice{
+    color: hsl(228, 12%, 48%);
+}
+
+.container #second .content button{
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    cursor: pointer;
+    font-family: 'Fraunces', serif;
+    border-radius: 10px;
+    padding: 1em;
+    font-size: 1em; 
+    width: 100%;
+}
